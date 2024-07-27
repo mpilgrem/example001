@@ -1,0 +1,4 @@
+.stack-work/
+*~
+*.csv
+*.yaml.lock

@@ -1,0 +1,42 @@
+spec-version: 0.36.0
+
+name:       example001
+version:    0.1.0.0
+github:     "mpilgrem/example001"
+license:    BSD-3-Clause
+author:     "Mike Pilgrem"
+maintainer: "public@pilgrem.com"
+copyright:  "Copyright 2024 Mike Pilgrem. All rights reserved."
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+description: Please see the README on GitHub at <https://github.com/mpilgrem/example001#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- bytestring
+- cassava
+- extra
+- vector
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+executables:
+  example001:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
